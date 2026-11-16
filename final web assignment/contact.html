@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Abdallah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">ABDALLAH<span>.</span></a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="lawyer.html">Meet the Lawyer</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="articles.html">Articles</a>
+        <a href="contact.html" class="nav-button">Contact Us</a>
+    </nav>
+</header>
+
+<main>
+    <section class="page-header">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h1>Contact Our Practice</h1>
+        <p>Send us your enquiry using the form below.</p>
+    </section>
+
+    <section class="page-content contact-layout">
+
+        <div>
+            <p class="eyebrow">CONTACT INFORMATION</p>
+            <h2> start a conversation.</h2>
+
+            <div class="info-card">
+                <h3>Phone</h3>
+                <p>+230 57995620</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Email</h3>
+                <p>abdallah@gmail.com</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Address</h3>
+                <p>Cyber Tower 1, Shri Atal Bihari Vajpayee Tower, Ebène Cybercity, Mauritius</p>
+            </div>
+
+        
+            <iframe
+                class="map-frame"
+                title="Map showing Ebene, Mauritius"
+                src="https://maps.google.com/maps?q=Ebene%2C%20Mauritius&output=embed"
+                loading="quick"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div>
+            <p class="eyebrow">SEND AN ENQUIRY</p>
+            <h2>Contact form</h2>
+
+            <form class="contact-form" id="contactForm" novalidate>
+
+                <div>
+                    <label for="name">Full name *</label>
+                    <input type="text" id="name" name="name"
+                           autocomplete="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email address *</label>
+                    <input type="email" id="email" name="email"
+                           autocomplete="email" required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone number *</label>
+                    <input type="tel" id="phone" name="phone"
+                           autocomplete="tel" required>
+                </div>
+
+                <div>
+                    <label for="practice">Practice area *</label>
+                    <select id="practice" name="practice" required>
+                        <option value="">Select an area</option>
+                        <option>Family Law</option>
+                        <option>Criminal Law</option>
+                        <option>Labour / Employment Law</option>
+                        <option>Tenancy and Rental Law</option>
+                        <option>Commercial Law</option>
+                        <option>Litigation and Arbitration</option>
+                        <option>Contract Drafting</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Your message *</label>
+                    <textarea id="message" name="message"
+                              required minlength="10"
+                              placeholder="Briefly describe your enquiry."></textarea>
+                </div>
+
+                <label class="consent">
+                    <input type="checkbox" id="consent" required>
+                    <span>
+                        I agree to the use of my information to respond
+                        to this enquiry. *
+                    </span>
+                </label>
+
+                <button type="submit" class="button">
+                    Submit Enquiry ↗
+                </button>
+
+                <p id="formMessage" class="form-message"
+                   role="status" aria-live="polite"></p>
+
+                <p class="small-note">
+                    Please do not include confidential or sensitive
+                    information in this demonstration form.
+                </p>
+            </form>
+        </div>
+
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© <span class="year"></span> Abdallah Law Firm.</p>
+  
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
